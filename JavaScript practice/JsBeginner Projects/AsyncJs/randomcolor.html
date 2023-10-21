@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsyncAwait</title>
+  </head>
+  <body>
+    <h1>Background color generator unlimited</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+      // generated the random color
+      let intervalId;
+      const RandomColor = () => {
+        hex = "1234567890ABCDEF";
+        let color = "#";
+        for (i = 0; i < 6; i++) {
+          color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      };
+      const startChange = () => {
+        document.body.style.background = RandomColor();
+      };
+      const stopChange = () => {
+        document.body.style.background = "transparent";
+      };
+      document.querySelector("#start").addEventListener("click", () => {
+        console.log("click");
+        intervalId = setInterval(startChange, 1000);
+      });
+      document.querySelector("#stop").addEventListener("click", () => {
+        console.log("click");
+        clearInterval(intervalId);
+      });
+    </script>
+  </body>
+</html>

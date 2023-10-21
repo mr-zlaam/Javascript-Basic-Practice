@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom manipulation|remove the element from the dom</title>
+  </head>
+  <body style="background-color: black; color: white; font-size: 30px">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    // const Addlang = (langName) => {
+    //   const li = document.createElement("li");
+    //   li.innerHTML = `${langName}`;
+    //   document.querySelector(".language").appendChild(li);
+    // };
+    // Addlang("python");
+    // Addlang("dart");
+
+    const addoptlang = (langname) => {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langname));
+      document.querySelector(".language").appendChild(li);
+    };
+    addoptlang("Typescript ");
+
+    //edit the text
+    const editor = document.querySelector("li:nth-child(2)");
+    console.log(editor);
+    const newli = document.createElement("li");
+    newli.textContent = "mojo";
+    editor.replaceWith(newli);
+    //edit js
+    const replaceJs = document.querySelector("li:nth-child(1)");
+    const newjs = document.createElement("li");
+    newjs.textContent = "TypeScript";
+    replaceJs.replaceWith(newjs);
+    //Remove element
+    const removelang = document.querySelector("li:nth-child(2)");
+    removelang.remove();
+  </script>
+</html>

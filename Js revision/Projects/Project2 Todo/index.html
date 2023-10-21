@@ -1,0 +1,34 @@
+'<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="todomain">
+        <div class="title">
+          <h1>ToDoList</h1>
+          <div class="icons">
+            <img src="./img/sun.svg" alt="" />
+            <img src="./img/moon.svg" alt="" style="color: #fff" />
+          </div>
+        </div>
+        <div class="input">
+          <div class="input_controll">
+            <input type="text" name="text" id="input" placeholder="Add Task" />
+            <input type="button" value="Add" id="addbutton" />
+          </div>
+        </div>
+        <div class="output custom-scroll">
+          <div class="output_controller custom-scroll">
+            <ul class="tasklist"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

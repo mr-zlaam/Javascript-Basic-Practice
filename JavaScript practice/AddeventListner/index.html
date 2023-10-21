@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddEventListner in Detail</title>
+  </head>
+  <body>
+    <ul id="btns">
+      <li><button>zlaam</button></li>
+      <li><button>sardar</button></li>
+      <li><button>khan</button></li>
+      <li><button>siraj</button></li>
+    </ul>
+  </body>
+  <script>
+    document.querySelector("#btns").addEventListener("click", function (e) {
+      console.log("btn clicked");
+      if (e.target.tagName === "BUTTON") {
+        const removeit = e.target.parentNode;
+        removeit.remove();
+      }
+    });
+  </script>
+</html>

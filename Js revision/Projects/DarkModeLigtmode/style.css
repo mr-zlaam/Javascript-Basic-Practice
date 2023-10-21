@@ -1,0 +1,26 @@
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sun,
+.moon {
+  padding: 40px;
+  height: 100px;
+  display: grid;
+  cursor: pointer;
+  place-items: center;
+}
+.sun {
+  background-color: white;
+}
+.moon {
+  background-color: white;
+}
+.sun {
+  position: relative;
+  left: 40px;
+  top: 40px;
+  border-radius: 50%;
+}

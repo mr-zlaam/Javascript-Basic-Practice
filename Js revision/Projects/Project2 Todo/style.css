@@ -1,0 +1,141 @@
+/* ? MainStyling */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+.main {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+.todomain {
+  background-color: white;
+  height: 80vh;
+  width: 60%;
+  box-shadow: 2px 2px 14px #888888;
+
+  overflow: hidden;
+  border-radius: 10px;
+}
+/* ?titlestyling */
+.title {
+  display: flex;
+  align-items: center;
+  background: red;
+  justify-content: center;
+  gap: 2rem;
+}
+.title > h1 {
+  padding: 20px 0px;
+  font-weight: bolder;
+  font-family: cursive;
+  color: white;
+}
+/* ? INput Styling */
+.input {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  background: white;
+}
+.input_controll > input:nth-child(1) {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  background: transparent;
+  font-weight: bolder;
+}
+.input_controll > input:nth-child(1)::placeholder {
+  user-select: none;
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.5;
+}
+.input_controll > input:nth-child(2) {
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.input_controll > input:nth-child(2):hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.output {
+  height: 79%;
+  position: relative;
+  /* left: 10%; */
+}
+.output_controller {
+  background: gray;
+  border-radius: 1vw;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 30px 10px;
+  height: 58.5vh;
+  overflow-y: scroll;
+}
+.output_controller > .tasklist > li {
+  background-color: black;
+  color: white;
+  width: 97%;
+  margin: 10px;
+  word-wrap: break-word;
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 120px;
+  font-family: Arial;
+  letter-spacing: 1px;
+  user-select: none;
+  font-weight: bold;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  border-radius: 20vw;
+}
+.line {
+  text-decoration: line-through;
+}
+.btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.custom-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: darkgray;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  border-radius: 50px;
+  background-color: #28282b;
+}
+@media screen and (max-widht: 925px) {
+  .output_controller > .tasklist > li {
+    margin: 10px;
+  }
+}

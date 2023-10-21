@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  height: 400px;
+  width: 500px;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    to right,
+    red,
+    blue
+  ); /* Use a gradient background */
+  background-size: 200% 100%; /* Create space for two colors */
+  transition: background-position 0.3s ease; /* Transition background position */
+}

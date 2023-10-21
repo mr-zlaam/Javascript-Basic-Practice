@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsyncAwait</title>
+  </head>
+  <body>
+    <h1>Allah is my one and only greatest Lord</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+      let myInterval;
+      const statrinterval = () => {
+        console.log("Zlaam", Date.now());
+      };
+      document.querySelector("#start").addEventListener("click", () => {
+        myInterval = setInterval(statrinterval, 1000);
+      });
+      document.querySelector("#stop").addEventListener("click", () => {
+        clearInterval(myInterval);
+        console.log("setInterval has been stopped");
+      });
+    </script>
+  </body>
+</html>

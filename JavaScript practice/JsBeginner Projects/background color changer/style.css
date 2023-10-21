@@ -1,0 +1,31 @@
+body {
+}
+.canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.button {
+  display: inline-block;
+  height: 200px;
+  margin: 20px;
+  width: 200px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+#blue {
+  background-color: blue;
+}
+#gray {
+  background-color: gray;
+}
+#black {
+  background-color: black;
+}
+#yellow {
+  background: #fff000;
+}
+p {
+  text-align: center;
+}
